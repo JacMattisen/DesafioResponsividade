@@ -2,15 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
 
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
 }
-  
 
 section {
-  height: 74vh; /* ocupa a altura da tela */
+  height: 74vh; /* altura da tela */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,7 +43,7 @@ section {
 
 .header-p {
   font-size: 1rem;
-  
+
   letter-spacing: 1.4px;
   color: #ffffff;
   margin-bottom: 30px;
@@ -57,8 +57,7 @@ section {
   font-size: 1.2rem;
 }
 
-.btn-primary{
-  
+.btn-primary {
   background-color: #ffffff;
   color: #333333;
   padding: 15px 25px;
@@ -68,8 +67,7 @@ section {
   cursor: pointer;
 }
 
-.btn-secondary{
-  
+.btn-secondary {
   background-color: #333333;
   color: #ffffff;
   padding: 15px 25px;
@@ -79,27 +77,28 @@ section {
   cursor: pointer;
 }
 
-.img-section, .img-section3 {
+.img-section,
+.img-section3 {
   display: flex;
-  
+
   justify-content: center;
   align-items: center;
-  gap: 20px; 
-  
+  gap: 20px;
+
   background-color: #ffffff;
 }
 
 .img-section img {
   max-width: 100%;
-  height:  auto;
+  height: auto;
   display: block;
-  
+
   margin-top: 3.5rem;
 }
 
 .text-content {
   max-width: 380px;
-  text-align: left;  
+  text-align: left;
 }
 
 .text-content h2 {
@@ -116,41 +115,29 @@ section {
   color: #333333;
   line-height: 1.6;
   margin-top: 1rem;
-  
-}
-
-@media (max-width: 768px) {
-  .img-section {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .text-content {
-    text-align: center;
-  }
 }
 
 .img-section2 {
   display: flex;
-  
+
   justify-content: center;
   align-items: center;
-  gap: 20px; 
-  
+  gap: 20px;
+
   background-color: #f6f6f6;
 }
 
 .img-section img {
   max-width: 100%;
-  height:  auto;
+  height: auto;
   display: block;
-  
+
   margin-top: 3.5rem;
 }
 
 .text-content {
   max-width: 380px;
-  text-align: left;  
+  text-align: left;
 }
 
 .text-content h2 {
@@ -167,48 +154,30 @@ section {
   color: #333333;
   line-height: 1.6;
   margin-top: 1rem;
-  
 }
 
-@media (max-width: 768px) {
-  .img-section {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .text-content {
-    text-align: center;
-  }
-}
-
-
-.img-section4{
+.img-section4 {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #f6f6f6;
   height: 120vh;
-  
-  
 }
 
-.text-content {
+.text-content4 {
   max-width: 890px;
   text-align: center;
-  
-  
 }
 
-.text-content h2 {
+.text-content4 h2 {
   font-size: 3rem;
   font-family: "Luckiest Guy", cursive;
   font-weight: 400;
   text-transform: uppercase;
-  
 }
 
-.text.content p {
+.text-content4 p {
   font-size: 1.1rem;
   font-weight: 500;
   color: #333333;
@@ -217,9 +186,94 @@ section {
 }
 
 footer {
-  height: 150px;
-  background-color: #23272A;
+  height: 100px;
+  background-color: #23272a;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 1024px) {
+  .header-content h1 {
+    font-size: 3rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .img-section,
+  .img-section2,
+  .img-section3 {
+    flex-direction: column;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .text-content,
+  .text-content4 {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .text-content h2 {
+    font-size: 2rem;
+  }
+
+  .text-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-banner {
+    height: auto;
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .header-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .header-p {
+    font-size: 0.95rem;
+    padding: 0 10px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    font-size: 1rem;
+    padding: 12px 20px;
+  }
+
+  .img-section,
+  .img-section2,
+  .img-section3 {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .text-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .img-section img,
+  .img-section2 img {
+    margin-top: 1.5rem;
+  }
+
+  .text-content4 h2 {
+    font-size: 2rem;
+  }
+
+  .text-content4 {
+    padding: 0 20px;
+  }
+
+  .img-section4 {
+    height: auto;
+    padding: 40px 20px;
+  }
 }
